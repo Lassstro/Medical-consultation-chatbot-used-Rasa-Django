@@ -1,0 +1,5 @@
+rasa==3.4.4
+django==3.2.18
+pyserial==3.5
+django-cors-headers==3.10.1
+djangorestframework==3.14.0

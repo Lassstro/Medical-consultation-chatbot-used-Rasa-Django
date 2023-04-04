@@ -3,9 +3,10 @@
 - Chatbot tư vấn bằng giọng nói (Rasa Chatbot)
 
 Bước 1: Cài đặt môi trường
+
     - Với window
 
-        python -m venv venv
+        python -m venv venv==3.8
 
         venv\Scripts\activate
 
