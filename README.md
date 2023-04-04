@@ -3,7 +3,7 @@
 - Chatbot tư vấn bằng giọng nói (Rasa Chatbot)
 
 Bước 1: Cài đặt môi trường
-    - Mở terminal ở thư mục Code python
+    - Với window
 
         python -m venv venv
 
@@ -11,7 +11,20 @@ Bước 1: Cài đặt môi trường
 
         pip install -r requirements.txt
 
-Bước 2: Tạo project bằng django
+    - Với ubutu
+
+        sudo apt-get update
+
+        sudo apt-get install python3.8
+
+        virtualenv -p python3.8 venv
+
+        source ./venv/bin/activate
+
+        pip install -r requirements.txt
+
+
+Bước 2: Chạy django project
 
     - Mở terminal, đưa con trỏ dòng lệnh về thư mục rasaChatbot
 
@@ -27,7 +40,7 @@ Bước 2: Tạo project bằng django
 
 Bước 3: Chạy chatbot Rasa
 
-    - Mở một terminal khác với con trỏ dòng lệnh ở thư mục botRasa
+    - Mở 2 terminal khác với con trỏ dòng lệnh ở thư mục botRasa:
 
         rasa run actions
 
