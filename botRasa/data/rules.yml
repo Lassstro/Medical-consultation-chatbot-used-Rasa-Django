@@ -1,0 +1,39 @@
+version: "3.1"
+
+rules:
+- rule: Chào hỏi và chỉ dẫn khi người dùng chào hỏi
+  steps:
+  - intent: chao_hoi
+  - action: utter_chao_hoi
+
+- rule: luôn trả lời yêu cầu của người dùng
+  steps:
+  - intent: yeu_cau
+  - action: utter_yeu_cau
+
+- rule: lấy thêm thông tin triệu chứng khi đưa ra triệu chứng chung chung
+  steps:
+  - intent: trieu_chung_nhe
+  - action: utter_trieu_chung_nhe
+
+- rule: Hướng dẫn cách quét căn cước công dân
+  steps:
+  - intent: cach_cung_cap_thong_tin
+  - action: utter_cach_quet_cccd
+
+- rule: Tạm biệt
+  steps:
+  - intent: tam_biet
+  - action: utter_tam_biet
+
+- rule: báo lỗi khi nào các kết quả phân lớp dưới ngưỡng 0.7
+  steps:
+  - intent: nlu_fallback
+  - action: utter_fallback
+
+- rule: sốt xuất huyết
+  steps:
+  - intent: sot_xuat_huyet
+  - action: utter_sot_xuat_huyet
+  - action: action_mo_module_trich_xuat
+  - action: action_trich_xuat_thong_tin

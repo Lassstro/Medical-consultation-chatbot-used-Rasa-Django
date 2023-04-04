@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot</title>
+    <link rel="stylesheet" href= "/static/css/chatbot.css" />
+    <link rel="stylesheet" href= "/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href= "/static/icons/css/all.css">
+  </head>
+
+  <body>
+    <section class="msger">
+      <header class = "msger-header">
+        <div class="msger-header-title">HỆ CHUYÊN GIA Y TẾ</div>
+      </header>
+      <main class="msger-chat">
+        <div class="msg left-msg">
+          <div class="msg-img"></div>
+          <div class="msg-bubble">
+            <div class="msg-info">
+              <div class="msg-info-name">MTAbot</div>
+              <div class="msg-info-time"><span id="realtime-msg"></span></div>
+            </div>
+            <div class="msg-text">
+              Chào bạn. Tôi là hệ chuyên gia y tế MTAbot. 
+              Hãy ấy vào biểu tưởng micro và cho tôi biết bạn cần tôi tư vấn điều gì?
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="msger-voice-chat">
+        <button class="msger-mic-btn">
+            <i class="fa fa-microphone"></i>
+        </button>
+      </div>
+    </section>
+    <script src= "/static/js/chatbot.js"></script>
+    <script>
+    // Display time in message
+    document.getElementById("realtime-msg").textContent = new Date().toLocaleTimeString()
+    </script>
+  </body>
+</html>

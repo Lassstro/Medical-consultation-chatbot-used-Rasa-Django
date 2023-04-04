@@ -1,0 +1,15 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: bệnh sốt xuất huyết
+  steps:
+  - user: |
+      Tôi muốn khám bệnh
+    intent: yeu_cau
+  - action: utter_yeu_cau
+  - user: |
+      Xuất hiện chấm huyết ngoài da
+    intent: sot_xuat_huyet
+  - action: utter_sot_xuat_huyet
+

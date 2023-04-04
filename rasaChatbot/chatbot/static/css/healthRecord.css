@@ -1,0 +1,10 @@
+html {
+    box-sizing: border-box;
+}
+
+#patient-table *{
+    border: 2px solid #ddd;
+}
+
+
+

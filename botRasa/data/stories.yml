@@ -1,0 +1,47 @@
+version: "3.1"
+
+stories:
+
+- story: tư vấn bệnh sot_xuat_huyet
+  steps:
+  - intent: yeu_cau
+  - action: utter_yeu_cau
+  - intent: sot_xuat_huyet
+  - action: utter_sot_xuat_huyet
+  - action: action_mo_module_trich_xuat
+  - action: action_trich_xuat_thong_tin
+  - intent: xac_nhan
+  - action: utter_xac_nhan_sot_xuat_huyet
+
+- story: tư vấn bệnh nhuoc_thi
+  steps:
+  - intent: yeu_cau
+  - action: utter_yeu_cau
+  - intent: nhuoc_thi
+  - action: utter_nhuoc_thi
+  - action: action_mo_module_trich_xuat
+  - action: action_trich_xuat_thong_tin
+  - intent: xac_nhan
+  - action: utter_xac_nhan_nhuoc_thi
+
+- story: tư vấn bệnh quai_bi
+  steps:
+  - intent: yeu_cau
+  - action: utter_yeu_cau
+  - intent: quai_bi
+  - action: utter_quai_bi
+  - action: action_mo_module_trich_xuat
+  - action: action_trich_xuat_thong_tin
+  - intent: xac_nhan
+  - action: utter_xac_nhan_quai_bi
+
+- story: tư vấn bệnh thuy_dau
+  steps:
+  - intent: yeu_cau
+  - action: utter_yeu_cau
+  - intent: thuy_dau
+  - action: utter_thuy_dau
+  - action: action_mo_module_trich_xuat
+  - action: action_trich_xuat_thong_tin
+  - intent: xac_nhan
+  - action: utter_xac_nhan_thuy_dau
