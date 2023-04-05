@@ -31,13 +31,6 @@ rules:
   - intent: nlu_fallback
   - action: utter_fallback
 
-- rule: sốt xuất huyết
-  steps:
-  - intent: sot_xuat_huyet
-  - action: utter_sot_xuat_huyet
-  - action: action_mo_module_trich_xuat
-  - action: action_trich_xuat_thong_tin
-
 - rule: trích xuất thông tin
   steps:
   - intent: san_sang_cung_cap_thong_tin
