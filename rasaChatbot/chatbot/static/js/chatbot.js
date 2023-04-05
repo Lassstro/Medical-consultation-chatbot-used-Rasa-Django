@@ -40,7 +40,7 @@ function resultOfSpeechRecognition(event) {
     const msgText = event.results[0][0].transcript;
     if (!msgText) return;
     appendMessage(PERSON_NAME, PERSON_IMG, "right", msgText);
-    if (msgText == "sẵn sàng" || msgText == "vui lòng"){
+    if (msgText == "sẵn sàng" || msgText == "vui lòng" || msgText == "tôi sẵn sàng"){
         appendMessage(BOT_NAME, BOT_IMG, "left", "Hãy đưa thẻ bảo hiểm y tế của bạn vào vị trí bên dưới");
         utter.text = "Hãy đưa thẻ bảo hiểm y tế của bạn vào vị trí bên dưới";
         synth.speak(utter)
