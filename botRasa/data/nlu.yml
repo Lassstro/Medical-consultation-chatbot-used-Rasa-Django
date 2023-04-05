@@ -2,6 +2,11 @@ version: "3.1"
 
 nlu:
 
+- intent: san_sang_cung_cap_thong_tin
+  examples: |
+    - sẵn sàng
+    - rất vui lòng
+
 - intent: xac_nhan
   examples: |
     - Thông tin đúng

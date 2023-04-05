@@ -27,7 +27,7 @@ class TrichThongTin(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
-        dispatcher.utter_message(text = 'Trích xuất thông tin thành công')
+        dispatcher.utter_message(text = 'Tiến hành trích xuất thông tin')
     
         data = get_data_from_serial('COM3')
         info = xu_li_the_bhyt(data)

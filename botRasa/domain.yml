@@ -11,6 +11,7 @@ intents:
   - cach_cung_cap_thong_tin
   - xac_nhan
   - tam_biet
+  - san_sang_cung_cap_thong_tin
 
 responses:
   utter_xac_nhan_sot_xuat_huyet:
@@ -35,16 +36,16 @@ responses:
   - text: "Với triệu chứng như vậy, tôi chưa thể đưa ra chẩn đoán. Bạn có triệu chứng đặc trưng nào nữa không?"
 
   utter_sot_xuat_huyet:
-  - text: "Bạn có thể bị sốt xuất huyết. Hãy cung cấp thông tin bằng cách đưa căn cước công dân của bạn vào đúng vị trí bên dưới để tôi tạo hồ sơ khám bệnh cho bạn."
+  - text: "Bạn có thể bị sốt xuất huyết. Bạn sẵn sàng cung cấp thông tin của mình cho tôi để tôi lập phiếu khám bệnh cho bạn chứ?"
 
   utter_nhuoc_thi:
-  - text: "Bạn có thể bị nhược thị. Hãy cung cấp thông tin bằng cách đưa căn cước công dân của bạn vào đúng vị trí bên dưới để tôi tạo hồ sơ khám bệnh cho bạn."
+  - text: "Bạn có thể bị nhược thị. Bạn sẵn sàng cung cấp thông tin của mình cho tôi để tôi lập phiếu khám bệnh cho bạn chứ?"
 
   utter_quai_bi:
-  - text: "Bạn có thể bị quai bị. Hãy cung cấp thông tin bằng cách đưa căn cước công dân của bạn vào đúng vị trí bên dưới để tôi tạo hồ sơ khám bệnh cho bạn."
+  - text: "Bạn có thể bị quai bị. Bạn sẵn sàng cung cấp thông tin của mình cho tôi để tôi lập phiếu khám bệnh cho bạn chứ?"
 
   utter_thuy_dau:
-  - text: "Bạn có thể bị thủy đậu. Hãy cung cấp thông tin bằng cách đưa căn cước công dân của bạn vào đúng vị trí bên dưới để tôi tạo hồ sơ khám bệnh cho bạn."
+  - text: "Bạn có thể bị thủy đậu. Bạn sẵn sàng cung cấp thông tin của mình cho tôi để tôi lập phiếu khám bệnh cho bạn chứ?"
 
   utter_fallback:
   - text: "Tôi chưa hiểu ý bạn, hãy kiểm tra và nói lại thông tin hội thoại giúp tôi ạ"

@@ -37,3 +37,8 @@ rules:
   - action: utter_sot_xuat_huyet
   - action: action_mo_module_trich_xuat
   - action: action_trich_xuat_thong_tin
+
+- rule: trích xuất thông tin
+  steps:
+  - intent: san_sang_cung_cap_thong_tin
+  - action: action_trich_xuat_thong_tin
