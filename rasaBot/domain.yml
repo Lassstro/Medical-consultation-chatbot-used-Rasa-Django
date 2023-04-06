@@ -1,0 +1,64 @@
+version: "3.1"
+
+intents:
+  - chao_hoi
+  - yeu_cau
+  - trieu_chung_nhe
+  - sot_xuat_huyet
+  - nhuoc_thi
+  - quai_bi
+  - thuy_dau
+  - cach_cung_cap_thong_tin
+  - xac_nhan
+  - tam_biet
+  - san_sang_cung_cap_thong_tin
+
+responses:
+  utter_xac_nhan_sot_xuat_huyet:
+  - text: "Khởi tạo hồ sơ thành công. Hãy đến phòng 107 tầng 1 khoa Truyền nhiễm để khám bệnh"
+  
+  utter_xac_nhan_nhuoc_thi:
+  - text: "Khởi tạo hồ sơ thành công. Hãy đến phòng 202 tầng 2 khoa Mắt để khám bệnh"
+
+  utter_xac_nhan_quai_bi:
+  - text: "Khởi tạo hồ sơ thành công. Hãy đến phòng 105 tầng 1 Khoa truyền nhiễm để khám bệnh"
+
+  utter_xac_nhan_thuy_dau:
+  - text: "Khởi tạo hồ sơ thành công. Hãy đến phòng 205 tầng 2 Khoa Da liễu để khám bệnh"
+
+  utter_chao_hoi:
+  - text: "Chào bạn. Tôi là hệ chuyên gia y tế MTAbot. Hãy ấy vào biểu tưởng micro và cho tôi biết bạn cần tôi tư vấn điều gì?"
+
+  utter_yeu_cau:
+  - text: "Bạn đã biết rõ mình bị bệnh gì chưa? Nếu chưa, hãy nói cho tôi biết những triệu chứng mà bạn mắc phải"
+
+  utter_trieu_chung_nhe:
+  - text: "Với triệu chứng như vậy, tôi chưa thể đưa ra chẩn đoán. Bạn có triệu chứng đặc trưng nào nữa không?"
+
+  utter_sot_xuat_huyet:
+  - text: "Bạn có thể bị sốt xuất huyết. Bạn sẵn sàng cung cấp thông tin của mình cho tôi để tôi lập phiếu khám bệnh cho bạn chứ?"
+
+  utter_nhuoc_thi:
+  - text: "Bạn có thể bị nhược thị. Bạn sẵn sàng cung cấp thông tin của mình cho tôi để tôi lập phiếu khám bệnh cho bạn chứ?"
+
+  utter_quai_bi:
+  - text: "Bạn có thể bị quai bị. Bạn sẵn sàng cung cấp thông tin của mình cho tôi để tôi lập phiếu khám bệnh cho bạn chứ?"
+
+  utter_thuy_dau:
+  - text: "Bạn có thể bị thủy đậu. Bạn sẵn sàng cung cấp thông tin của mình cho tôi để tôi lập phiếu khám bệnh cho bạn chứ?"
+
+  utter_fallback:
+  - text: "Tôi chưa hiểu ý bạn, hãy kiểm tra và nói lại thông tin hội thoại giúp tôi ạ"
+
+  utter_cach_quet_cccd:
+  - text: "Hãy đưa căn cước công dân của bạn vào vị trí ngay dưới và giữ nguyên trong giây lát. Tôi sẽ tự động quét lấy thông tin và báo cho bạn biết ngay khi có kết quả"
+
+  utter_tam_biet:
+  - text: "Tạm biệt bạn. Chúc bạn nhanh chóng khỏi bệnh"
+
+actions:
+  - action_trich_xuat_thong_tin
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

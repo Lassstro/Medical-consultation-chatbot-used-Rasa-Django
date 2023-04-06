@@ -1,0 +1,80 @@
+version: "3.1"
+
+nlu:
+
+- intent: san_sang_cung_cap_thong_tin
+  examples: |
+    - sẵn sàng
+    - rất vui lòng
+
+- intent: xac_nhan
+  examples: |
+    - Thông tin đúng
+    - xác nhận
+    - chính xác
+
+- intent: chao_hoi
+  examples: |
+    - xin chào
+    - chào bạn
+    - bạn có thể làm gì
+    - bạn giúp gì được cho tôi
+
+- intent: yeu_cau
+  examples: |
+    - đăng kí khám bệnh
+    - tư vấn khám bệnh
+    - hỗ trợ tư vấn phòng khám
+    - tìm phòng khám
+
+- intent: trieu_chung_nhe
+  examples: |
+    - Nhức đầu
+    - Buồn nôn
+    - sốt
+    - mệt mỏi
+    - Đau đầu
+
+- intent: sot_xuat_huyet
+  examples: |
+    - Phát ban
+    - Xuất hiện chấm huyết ngoài da
+    - Chảy máu mũi hoặc ở chân răng
+    - Nôn ói ra máu hoặc trong phân có máu
+    - Nôn nhiều, đau bụng , tay chân lạnh ẩm
+    - sốt xuất huyết
+
+- intent: nhuoc_thi
+  examples: |
+    - Nhìn mờ một mắt hoặc 2 mắt
+    - Sụp mi
+    - Mắt nhìn lệch, phải nghiêng đầu để nhìn khi nhìn thẳng
+    - Hay nheo mắt, có tật nháy mắt khó kiểm soát
+    - nhược thị
+
+- intent: quai_bi
+  examples: |
+    - nhức tai
+    - Cảm giác ớn lạnh, sợ gió 
+    - Đau nhức xương hàm
+    - Tuyến mang tai sưng to gây đau nhức
+    - quai bị
+
+- intent: thuy_dau
+  examples: |
+    - Xuất hiện các nốt phỏng nước hình tròn
+    - Nốt phỏng nước gây ngứa rát và khó chịu
+    - thủy đậu
+
+- intent: cach_cung_cap_thong_tin
+  examples: |
+    - cung cấp như thế nào
+    - hướng dẫn cách cung cấp thông tin
+    - chưa biết sử dụng chức năng này
+    - cần quét căn cước công dân ở đâu
+
+- intent: tam_biet
+  examples: |
+    - Tạm biệt
+    - Cảm ơn
+    - Chào tạm biệt

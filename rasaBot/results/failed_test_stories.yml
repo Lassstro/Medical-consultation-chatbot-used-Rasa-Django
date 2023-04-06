@@ -1,0 +1,38 @@
+version: "3.1"
+stories:
+- story: tư vấn bệnh nhuoc_thi 1 (.\tests\test_stories.yml)
+  steps:
+  - intent: yeu_cau
+  - action: utter_yeu_cau
+  - intent: trieu_chung_nhe
+  - action: utter_trieu_chung_nhe
+  - intent: nhuoc_thi
+  - action: utter_nhuoc_thi
+  - intent: san_sang_cung_cap_thong_tin
+  - action: action_trich_xuat_thong_tin
+  - intent: xac_nhan
+  - action: utter_xac_nhuoc_thi  # predicted: utter_xac_nhan_nhuoc_thi
+- story: tư vấn bệnh quai_bi 1 (.\tests\test_stories.yml)
+  steps:
+  - intent: yeu_cau
+  - action: utter_yeu_cau
+  - intent: trieu_chung_nhe
+  - action: utter_trieu_chung_nhe
+  - intent: quai_bi
+  - action: utter_quai_bi
+  - intent: san_sang_cung_cap_thong_tin
+  - action: action_trich_xuat_thong_tin
+  - intent: xac_nhan
+  - action: utter_xac_quai_bi  # predicted: utter_xac_nhan_quai_bi
+- story: tư vấn bệnh thuy_dau 1 (.\tests\test_stories.yml)
+  steps:
+  - intent: yeu_cau
+  - action: utter_yeu_cau
+  - intent: trieu_chung_nhe
+  - action: utter_trieu_chung_nhe
+  - intent: thuy_dau
+  - action: utter_thuy_dau
+  - intent: san_sang_cung_cap_thong_tin
+  - action: action_trich_xuat_thong_tin
+  - intent: xac_nhan
+  - action: utter_xac_thuy_dau  # predicted: utter_xac_nhan_thuy_dau

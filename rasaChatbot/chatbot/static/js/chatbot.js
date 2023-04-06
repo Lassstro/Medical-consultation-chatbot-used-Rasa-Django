@@ -12,6 +12,8 @@ const msgerInput =  document.querySelector(".msger-input");
 const textVoice = document.querySelector(".text-voice")
 
 let onMic = false
+let micWhenSpeech = false
+let timerLoop
 
 const synth = window.speechSynthesis
 var utter = new SpeechSynthesisUtterance();
@@ -27,11 +29,15 @@ reg.maxAlternatives = 1;
 msgerMicBtn.addEventListener("click", () => {
     if (onMic){
         onMic = false
+        micIcon.classList.remove("text-danger")
         reg.stop()
+        clearInterval(timerLoop)
     }
     else {
         onMic = true
+        micIcon.classList.add("text-danger")
         reg.start()
+        timerLoop = setInterval(checkSpeaking, 500)
     }
 })
 
@@ -45,19 +51,23 @@ function resultOfSpeechRecognition(event) {
         utter.text = "Hãy đưa thẻ bảo hiểm y tế của bạn vào vị trí bên dưới";
         synth.speak(utter)
     }
+    if (msgText == "xác nhận" || msgText == "đúng rồi" || msgText == "chính xác"){
+        appendMessage(BOT_NAME, BOT_IMG, "left", "Khởi tạo hồ sơ thành công. Hãy đến phòng 107 tầng 1 khoa Truyền nhiễm để khám bệnh");
+        utter.text = "Khởi tạo hồ sơ thành công. Hãy đến phòng 107 tầng 1 khoa Truyền nhiễm để khám bệnh";
+        synth.speak(utter)
+    }
     sendMessage(msgText);
 }
 
 reg.addEventListener("end", () => {
-    micIcon.classList.remove("text-danger")
     // Restart micro if onMic = true
-    if (onMic){
+    if (onMic && micWhenSpeech == false){
         reg.start()
     }
 })
 
 reg.addEventListener("start", () => {
-    micIcon.classList.add("text-danger")
+    micWhenSpeech = false
 })
 
 function sendMessage(requestText) {
@@ -103,4 +113,16 @@ function appendMessage(name, img, side, text) {
 //     timeDisplay.textContent = formattedString;
 // }
 // setInterval(refreshTime, 1000);
+
+function checkSpeaking(){
+    if (synth.speaking){
+        micWhenSpeech = true
+        reg.stop()
+    }
+    else {
+        if (micWhenSpeech){
+            reg.start()
+        }
+    }
+}
 
